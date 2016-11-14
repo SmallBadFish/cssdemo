@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script>
+    var params = {
+        "phone": "13812341234",
+        "subCard": "456444646456",
+        "applyId": "adba-ajdo-qoij-ncno"
+    };
+    function create() {
+        $.ajax({
+            url:"http://localhost:81/backend-card/callservice/applyCardService/createApplication",
+            type:'POST',
+            datatype:'json',
+            success:function (data) {
+
+            }
+        });
+    }
+
+
+</script>
+<body>
+    <a id="create" onclick="create()">Create</a>
+</body>
+</html>

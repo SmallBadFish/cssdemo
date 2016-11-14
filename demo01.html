@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+            position: relative;
+            left: 50%;
+            margin-left: -480px;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        #header, #fooder {
+            height: 100px;
+        }
+
+        #container {
+            float: left;
+            border: none;
+        }
+
+        .floatL {
+            float: left;
+            width: 713px;
+            border: none;
+        }
+
+        .floatR {
+            float: right;
+            width: 240px;
+        }
+
+        .zhuanji {
+            width: 464px;
+            float: left;
+            height: 180px;
+        }
+
+        .hihi {
+            width: 240px;
+            height: 180px;
+            float: left
+        }
+
+        .ri_cont {
+            width: 240px;
+            height: 500px;
+            float: left;
+        }
+
+        .le_cont {
+            float: left;
+            width: 240px;
+            height: 315px;
+        }
+
+        .new_tuijian01, .new_tuijian02, .new_tuijian03 {
+            width: 464px;
+            height: 100px;
+            float: right;
+        }
+
+        .clearB {
+            clear: both;
+        }
+
+        .mb5 {
+            margin-bottom: 5px;
+        }
+
+        .mb7 {
+            margin-bottom: 7px;
+        }
+
+        .mr5 {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="mb7">header</div>
+    <div id="container" class="mb7">
+        <div class="floatL mr5">
+            <div class="zhuanji mr5 mb5">zhuanji</div>
+            <div class="hihi">hihi</div>
+            <div class="le_cont mr5">le_cont</div>
+            <div class="new_tuijian01 mb5">new_tuijian01</div>
+            <div class="new_tuijian02 mb5">new_tuijian02</div>
+            <div class="new_tuijian03">new_tuijian03</div>
+        </div>
+        <div class="ri_cont floatR">ri_cont</div>
+    </div>
+    <div id="fooder" class="clearB"></div>
+</body>
+</html>
