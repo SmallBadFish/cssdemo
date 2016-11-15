@@ -4,14 +4,151 @@
     <meta charset="UTF-8">
     <title>DIV_CSS简单的页面布局示例</title>
 </head>
-<body>
-    <div id="container">
-        <div id="header">
-            <div id="logo">LOGO</div>
-            <div id="banner">
-            </div>
-        </div>
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+        font-family: Arial, 宋体 sans-serif;
+    }
 
+    .border {
+        border: 1px solid #888888;
+    }
+
+    .bgcolor {
+        background: #dcdddb;
+    }
+
+    #container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    #header {
+        float: left;
+        width: 100%;
+    }
+
+    #logo {
+        float: left;
+        height: 80px;
+        width: 200px;
+    }
+
+    #banner {
+        float: right;
+        width: 750px;
+    }
+
+    #banner #left {
+        float: left;
+        width: 540px;
+        height: 80px;
+    }
+
+    #banner #right {
+        float: right;
+        width: 200px;
+        height: 80px;
+    }
+
+    .nav {
+        float: left;
+        height: 10px;
+        width: 100%;
+        overflow: hidden;
+        clear: both;
+    }
+
+    #menu {
+        float: left;
+        width: 100%;
+        height: 30px;
+    }
+
+    #sidebar {
+        float: right;
+        width: 200px;
+        height: 410px;
+    }
+
+    #sidebar .bar {
+        float: left;
+        width: 100%;
+        height: 130px;
+    }
+
+    #content {
+        float: left;
+        width: 750px;
+    }
+
+    #content .left_box {
+        float: left;
+        width: 370px;
+        height: 200px;
+    }
+
+    #content .right_box {
+        float: right;
+        width: 370px;
+        height: 200px;
+    }
+
+    #content .left {
+        float: left;
+        height: 200px;
+        width: 180px;
+    }
+
+    #content .right {
+        float: right;
+        height: 200px;
+        width: 180px;
+    }
+
+    #footer {
+        float: left;
+        width: 100%;
+        height: 60px;
+    }
+</style>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="logo">LOGO</div>
+        <div id="banner">
+            <div id="left" class="bgcolor">BANNER1</div>
+            <div id="right" class="bgcolor">BANNER1</div>
+        </div>
     </div>
+    <div class="nav"></div>
+    <div id="menu" class="bgcolor">水平导航条</div>
+    <div class="nav"></div>
+    <div id="content">
+        <div class="left_box border">栏目（一）</div>
+        <div class="right_box border">栏目（二）</div>
+        <div class="nav"></div>
+        <div class="left_box">
+            <div class="left border">栏目（三）</div>
+            <div class="right border">栏目（四）</div>
+        </div>
+        <div class="right_box">
+            <div class="left border">栏目（五）</div>
+            <div class="right border">栏目（六）</div>
+        </div>
+    </div>
+    <div id="sidebar">
+        <div class="bar border">栏目（七）</div>
+        <div class="nav"></div>
+        <div class="bar border">栏目（八）</div>
+        <div class="nav"></div>
+        <div class="bar border">栏目（九）</div>
+    </div>
+    <div class="nav"></div>
+    <div id="footer" class="bgcolor">页脚</div>
+</div>
 </body>
 </html>
