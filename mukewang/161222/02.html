@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>横向两列布局</title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #wrap{
+        background: #009933;
+        margin: 0 auto;
+        width: 90%;
+    }
+    #header{
+        width: 100%;
+        background: #9900CC;
+    }
+    #mainbody{
+        width: 100%;
+        background: #00FF00;
+        overflow: hidden;
+    }
+    #footer{
+        width: 100%;
+        background: #FF0000;
+    }
+    .left{
+        width: 800px;
+        height: 200px;
+        background: #00FFFF;
+        float: left;
+    }
+    .right{
+        width: 140px;
+        height: 500px;
+        background: #CCFF33;
+        float: right;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <div id="header">头部</div>
+        <div id="mainbody">主体内容
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div id="footer">版权部分</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color: darkgrey;
+    color: #49997a;
+}
+
+h4{
+    text-indent: 2em ;
+}
+
+p{
+    /*text-transform: full-width;*/
+    text-space: 100px;
+}
+
+a:link{
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: #9900CC;
+}
+a:active{
+color: #351899;
+}

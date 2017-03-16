@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动布局+清除浮动</title>
+</head>
+<style type="text/css">
+    .box1{
+        height: 50px;
+        background: red;
+        float: left;
+    }
+    .box2{
+        height: 50px;
+        background: blue;
+        float: left;
+    }
+    .p2{
+        /*clear: left;*/
+        width: 100%;
+        overflow: hidden;
+    }
+</style>
+<body>
+<p>p1标签</p>
+<div class="box1">盒子一盒子一盒子一盒子一盒子一</div>
+<div class="box2">盒子二盒子二盒子二盒子二盒子二盒子二盒子二盒子二盒子二盒子二盒
+</div>
+<p class="p2">p2标签</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+li strong {
+    color: red;
+}
+
+strong {
+    color: #9900CC;
+}
+
+#compare a{
+    color: #00FFFF;
+}
+
+.classSelector{
+    font-size: 40px;
+}
+
+.classSelector p{
+    font-size: 20px;
+}
+
+[title]{
+    color: #009933;
+}
+
+[title="123"]{
+    color: #9900CC;
+}
